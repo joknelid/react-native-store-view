@@ -18,7 +18,7 @@ type LoadProductParameters = {
   providerToken?: string
 }
 
-export default class StoreViewManager {
+class StoreViewManager {
   static loadProductWithParameters(params: LoadProductParameters): Promise {
     return new Promise((resolve, reject) => {
       NativeStoreViewManager.loadProductWithParameters(params, (err, result) => {
@@ -41,3 +41,5 @@ export default class StoreViewManager {
     });
   }
 }
+
+module.exports = StoreViewManager;
