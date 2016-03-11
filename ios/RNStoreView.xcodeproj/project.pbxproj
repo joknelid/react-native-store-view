@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6B4800091C92F293004DC2B4 /* RJHStoreViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B4800081C92F293004DC2B4 /* RJHStoreViewManager.m */; };
+		6B295D3B1C930AB600E016E8 /* RJHStoreViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B295D3A1C930AB600E016E8 /* RJHStoreViewManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +23,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		6B4800071C92F293004DC2B4 /* RJHStoreViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RJHStoreViewManager.h; path = ../../RJHStoreViewManager.h; sourceTree = "<group>"; };
-		6B4800081C92F293004DC2B4 /* RJHStoreViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RJHStoreViewManager.m; path = ../../RJHStoreViewManager.m; sourceTree = "<group>"; };
+		6B295D391C930AB600E016E8 /* RJHStoreViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJHStoreViewManager.h; sourceTree = SOURCE_ROOT; };
+		6B295D3A1C930AB600E016E8 /* RJHStoreViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJHStoreViewManager.m; sourceTree = SOURCE_ROOT; };
 		6B48FFFB1C92F274004DC2B4 /* libRNStoreView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNStoreView.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -58,8 +58,8 @@
 		6B48FFFD1C92F274004DC2B4 /* RNStoreView */ = {
 			isa = PBXGroup;
 			children = (
-				6B4800071C92F293004DC2B4 /* RJHStoreViewManager.h */,
-				6B4800081C92F293004DC2B4 /* RJHStoreViewManager.m */,
+				6B295D391C930AB600E016E8 /* RJHStoreViewManager.h */,
+				6B295D3A1C930AB600E016E8 /* RJHStoreViewManager.m */,
 			);
 			path = RNStoreView;
 			sourceTree = "<group>";
@@ -120,7 +120,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B4800091C92F293004DC2B4 /* RJHStoreViewManager.m in Sources */,
+				6B295D3B1C930AB600E016E8 /* RJHStoreViewManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +210,13 @@
 		6B4800051C92F274004DC2B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../../../React/**",
+					"$(SRCROOT)/../../react-native/React/**",
+					"$(SRCROOT)/node_modules/react-native/React/**",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -219,6 +226,13 @@
 		6B4800061C92F274004DC2B4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../../../React/**",
+					"$(SRCROOT)/../../react-native/React/**",
+					"$(SRCROOT)/node_modules/react-native/React/**",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -235,6 +249,7 @@
 				6B4800061C92F274004DC2B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6B48FFF61C92F274004DC2B4 /* Build configuration list for PBXProject "RNStoreView" */ = {
 			isa = XCConfigurationList;
